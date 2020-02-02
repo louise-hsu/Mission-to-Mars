@@ -126,20 +126,24 @@ def hemisphere(browser):
     
     links = browser.find_by_css("a.product-item h3")
     #print(links)
+    try:
+        for i in range(len(links)):
+            hemisphere = {}
 
-    for i in range(len(links)):
-        hemisphere = {}
+            browser.find_by_css("a.product-item h3")[i].click()
 
-        browser.find_by_css("a.product-item h3")[i].click()
+            sample_image = browser.find_link_by_text('Sample').first
+            hemisphere['img_url'] = sample_image['href']
 
-        sample_image = browser.find_link_by_text('Sample').first
-        hemisphere['img_url'] = sample_image['href']
+            hemisphere['title'] = browser.find_by_css('h2.title').text
 
-        hemisphere['title'] = browser.find_by_css('h2.title').text
-
-        hemisphere_image.append(hemisphere)
+            hemisphere_image.append(hemisphere)
+            
+            browser.back()
         
-        browser.back()
+    except BaseException:
+
+        return None
 
     return hemisphere_image
         
