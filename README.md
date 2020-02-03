@@ -20,10 +20,17 @@ This module has taught me the following:
 
 ## apps Folder
 - template folder
-    - index.html : The html framework to disply the data
+        - index.html : The html framework to disply the data
 - app.py: The code that shows the routing and mongodb
 - chromdriver.exe
 - scraping.py : The code that shows how to scrape the data from the sites
+
+## template portfolio- 03
+- assets folder
+        - css - style
+        -image - to insert images
+- index - the content in the portfolio
+        
 ## Documents
 
 - .gitignore
@@ -41,6 +48,12 @@ The output of the data is the following:
   - Latest Mars News
   - Featured Mars Image
   - Mars Facts
+  
+## Portfolio
+
+I started to edit my portfolio by adding information and resume details. I still need to go back and look over the projects I have completed to add to this. 
+
+I also began changing the styling a little bit... the font and colors.
   
 # Module 10 Challenge 
 
