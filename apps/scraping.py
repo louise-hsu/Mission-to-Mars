@@ -27,7 +27,7 @@ def scrape_all():
         "last_modified": dt.datetime.now()
     }
     return data
-
+    
 # ## Visit the NASA mars news site
 def mars_news(browser):
     # Visit the mars nasa news site
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     # If running as script, print scraped data
     print(scrape_all())
 
-browser.quit()
+
 
 
 
